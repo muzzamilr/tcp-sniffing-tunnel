@@ -13,6 +13,7 @@ struct Arguments {
 #[tokio::main]
 async fn main() -> Result<()> {
     let args = Arguments::parse();
-    tcp_sniffer(&args.from, &args.to).await?;
+    // tcp_sniffer(&args.from, &args.to).await?;
+    tcp_sniffer(&args.from, &args.to)?;
     Ok(())
 }
